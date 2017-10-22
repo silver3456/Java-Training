@@ -1,6 +1,6 @@
 package core;
 
-public class Hello {
+public class MyFirstProgram {
 	public static void main(String[] args) {
 		hello("Alex");
 
