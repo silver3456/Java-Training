@@ -5,10 +5,10 @@ public class MyFirstProgram {
 		hello("Alex");
 
 		Square s = new Square(5);
-		System.out.println("Square " + s.l + " = " + area(s));
+		System.out.println("Square " + s.l + " = " + s.area());
 
 		Rectangle r = new Rectangle(5, 6);
-		System.out.println("Rectangle " + r.a + " and " + r.b + " = " + area(r));
+		System.out.println("Rectangle " + r.a + " and " + r.b + " = " + r.area());
 
 	}
 
@@ -16,12 +16,6 @@ public class MyFirstProgram {
 		System.out.println("Hello " + somebody);
 	}
 
-	public static double area(Square s) {
-		return s.l * s.l;
-	}
 
-	public static double area(Rectangle r) {
-		return r.a * r.b;
-	}
 
 }
