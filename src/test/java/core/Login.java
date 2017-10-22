@@ -40,7 +40,7 @@ public class Login {
 		driver.findElement(By.cssSelector("button.btn.btn-default")).click();
 
 		for (int i = 1; i <= 17; i++) {
-			driver.findElement(By.cssSelector("li#app-:nth-child(" + i + ")")).click();
+			driver.findElement(By.cssSelector("li#app-:nth-child("+ i +")")).click();
 			// String a = ;
 			System.out.println(driver.getTitle());
 			driver.navigate().back();

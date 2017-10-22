@@ -4,12 +4,11 @@ public class Hello {
 	public static void main(String[] args) {
 		hello("Alex");
 
-		double l = 5;
-		System.out.println("Square " + l + " = " + area(l));
+		Square s = new Square(5);
+		System.out.println("Square " + s.l + " = " + area(s));
 
-		double a = 5;
-		double b = 6;
-		System.out.println("Rectangle " + a + " and " + b + " = " + area(a, b));
+		Rectangle r = new Rectangle(5, 6);
+		System.out.println("Rectangle " + r.a + " and " + r.b + " = " + area(r));
 
 	}
 
@@ -17,12 +16,12 @@ public class Hello {
 		System.out.println("Hello " + somebody);
 	}
 
-	public static double area(double len) {
-		return len * len;
+	public static double area(Square s) {
+		return s.l * s.l;
 	}
 
-	public static double area(double a, double b) {
-		return a * b;
+	public static double area(Rectangle r) {
+		return r.a * r.b;
 	}
 
 }
